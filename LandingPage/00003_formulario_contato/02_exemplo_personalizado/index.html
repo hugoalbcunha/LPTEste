@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo_form.css">
+		<title>LandingPage</title>
+	</head>
+<body>
+    <section class="formulario">
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Celular</label>
+            <input type="tel" name="phone" placeholder="(xx)xxxxx-xxxx" autocomplete="off" required>
+            <label>Produto</label>
+            <select id="produtos" name="$produtos">
+                <option value="n64">N64</option>
+                <option value="ps1">PS1</option>
+                <option value="xbox">Xbox</option>
+                <option value="saturn">Saturn</option>
+            </select>
+            <button type="submit" class="btn">Enviar</button>
+            <input type="hidden" name="accessKey" value="b3d2ad59-c1ca-47c4-b632-ba17fe6afe0a">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/00003_formulario_contato/02_exemplo_personalizado/obrigado.html">
+        </form>
+    </section>
+    <script src="js/script.js"></script>
+	<script src="js/script_card.js"></script>
+</body>
+</html>

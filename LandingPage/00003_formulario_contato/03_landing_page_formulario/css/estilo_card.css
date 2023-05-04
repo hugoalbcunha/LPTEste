@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+:root{
+    --red:#d63a25;
+    --white:#fff;
+    --dark:#1e1c2a;
+    --gray:#f1f1f1;
+    --darkred:darkred;
+}
+
+
+.container-1{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 10%;
+    margin: auto;
+    overflow: hidden;
+    background: var(--gray);
+}
+
+.card{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background: var(--darkred);
+    border-radius: 30px;
+    box-shadow: 0 0 15px 0 rgb(163, 163, 163);
+}
+.card-itens{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.card-top{
+    width: 100%;
+    height: 50%;
+    background: var(--white);
+    border-radius: 30px;
+    color: #fff;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+.icons span{
+    cursor: pointer;
+    padding: 1em;
+    padding-bottom: 0;
+    font-size:  30px;
+}
+
+.card-top h3{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 1.5em;
+    color: var(--dark);
+}
+
+.card-top h1{
+    font-size: 30px;
+    padding-left: 1em;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+#card-game-1,
+#card-game-2,
+#card-game-3,
+#card-game-4{
+    width: 100%;
+    height: 50%;
+    padding-top: 30px;
+    padding-left: 100px;
+    flex-direction:  column;
+    position:absolute;
+    transition: 0.5s;
+}
+#card-game-1 h3,
+#card-game-2 h3,
+#card-game-3 h3,
+#card-game-4 h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+#card-game-1 p,
+#card-game-2 p,
+#card-game-3 p,
+#card-game-4 p{
+    text-align: justify;
+    color: var(--white);
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid var(--white);
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    border: 2px solid var(--white);
+    background: var(--white);
+    color: var(--darkred);
+}
+
+#game-1,
+#game-2,
+#game-3,
+#game-4{
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    position: absolute;
+    top: 50px;
+    transition: all 0.5s;
+}
+
+
+#game-1,#card-game-1,
+#game-3,#card-game-3{
+    right: 50px;
+    
+}
+#game-2,#card-game-2,
+#game-4,#card-game-4
+{
+    right: -5000px;
+}
+
+@media (max-width:785px) {
+    .card{
+        width: 500px;
+        height: 550px;
+        position: relative;
+        background: var(--darkred);
+        border-radius: 30px;
+        box-shadow: 0 0 15px 0 rgb(163, 163, 163);
+    }
+    #game-1,
+    #game-2,
+    #game-3,
+    #game-4{
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 100px;
+        margin-bottom: 100px;
+        padding-bottom: 80px;
+        position: absolute;
+        top: 50px;
+        transition: all 0.5s;
+    }
+    #card-game-1,
+    #card-game-2,
+    #card-game-3,
+    #card-game-4{
+        width: 100%;
+        height: 50%;
+        padding-left: 100px;
+        flex-direction:  column;
+        position:absolute;
+        transition: 0.5s;
+    }
+    .card-top{
+        width: 100%;
+        height: 40%;
+        background: var(--white);
+        border-radius: 30px;
+        color: #fff;
+    }
+}

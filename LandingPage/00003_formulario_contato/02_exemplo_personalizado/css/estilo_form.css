@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500;600;700&display=swap');
+:root{
+    --red:#d63a25;
+    --white:#fff;
+    --dark:#1e1c2a;
+    --gray:#f1f1f1;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Condensed', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--gray);
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: var(--red);
+    color: var(--white);
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px 0 rgb(163, 163, 163);
+}
+.formulario h2{
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: var(--white);
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form input:hover{
+    border-radius: 16px;
+}
+#produtos option{
+    font-size: 50px;
+}
+
+.btn{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid var(--white);
+    margin: 15px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    background: var(--red);
+}
+
+.btn:hover{
+    border: 2px solid var(--white);
+    background: var(--white);
+    color: var(--red);
+}
+
+/*Página Obrigado*/
+
+.main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:var(--gray);
+    flex-direction: column;
+}
+.main .btn{
+    width: 50%;
+}
+.text{
+    font-size: 45px;
+    color: var(--red);
+    margin-bottom: 30px;
+}
+
+.paragrafo{
+    color: var(--dark);
+    margin-bottom: 50px;
+}
+
